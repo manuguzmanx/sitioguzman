@@ -35,6 +35,26 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h1 {
     font-family: var(--fuenteTitulo);
 }
 
@@ -47,7 +67,8 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
-.logo {
+.contenedor {
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -57,47 +78,66 @@ h2, h3, h4, h5 {
     margin: 2rem 0;
 }
 
-
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
+.subtitulo {
+    margin: 3rem 0;
+    color: var(--colorClaro);
+    /* letter-spacing: 0.2rem; */
+    font-weight: bold;
 }
 
-.navegacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 5rem;
+.logo {
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
 }
 
 header.header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--secundario);
-    justify-content: space-between;
 }
 
-footer.footer {
-    background-color: var(--secundario);
-    color: var(--colorClaro);
-    padding: 1rem;
-    font-weight: bold;
-    margin: 10rem  0 0 0;
+@media (min-width: 768px) {
+    header.header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
-.logo {
-    width: 70%;
-    margin: 0;
-    padding: 0;
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .navegacion a {
+    display: flex;
     text-decoration: none;
     font-size: 1.8rem;
     color: var(--azul);
-    padding: 1.5rem;
-    display: block;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    width: 100%;  
+}
+
+@media (min-width: 992px) {
+    .navegacion {
+        flex-direction: row;
+        margin-right: 5rem;
+        justify-content: space-between;
+        width: 40%;
+        text-align: center;
+    }
+
+    .navegacion a {
+        display: block;
+    }
+
+    .navegacion a:hover {
+        border-radius: 18px;
+    }
+    
 }
 
 .navegacion a:hover {
@@ -105,5 +145,14 @@ footer.footer {
     font-weight: bold;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
+}
+
+
+
+footer.footer {
+    background-color: var(--secundario);
+    color: var(--colorClaro);
+    padding: 1rem;
+    font-weight: bold;
+    margin: 10rem  0 0 0;
 }
