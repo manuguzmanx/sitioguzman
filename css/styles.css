@@ -121,7 +121,7 @@ header.header {
     width: 100%;  
 }
 
-@media (min-width: 992px) {
+@media (min-width: 480px) {
     .navegacion {
         flex-direction: row;
         margin-right: 5rem;
