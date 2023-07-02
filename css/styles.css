@@ -72,7 +72,6 @@ h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
-
 .titulo {
     color: var(--colorClaro);
     margin: 2rem 0;
@@ -88,7 +87,7 @@ h2, h3, h4, h5 {
 .logo {
     margin: 0 auto;
     padding: 0;
-    width: 70%;
+    width: 80%;
 }
 
 header.header {
