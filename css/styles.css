@@ -120,25 +120,6 @@ header.header {
     width: 100%;  
 }
 
-@media (min-width: 480px) {
-    .navegacion {
-        flex-direction: row;
-        margin-right: 5rem;
-        justify-content: space-between;
-        width: 40%;
-        text-align: center;
-    }
-
-    .navegacion a {
-        display: block;
-    }
-
-    .navegacion a:hover {
-        border-radius: 18px;
-    }
-    
-}
-
 @media (min-width: 768px) {
     .navegacion {
         flex-direction: row;
@@ -157,6 +138,7 @@ header.header {
     }
     
 }
+
 
 
 .navegacion a:hover {
