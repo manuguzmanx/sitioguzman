@@ -133,7 +133,8 @@ header.header {
         display: block;
     }
 
-    .navegacion a:hover {
+    .navegacion a:hover,
+    .navegacion .link-activo {
         border-radius: 18px;
     }
 }
