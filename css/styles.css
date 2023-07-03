@@ -78,10 +78,17 @@ h2, h3, h4, h5 {
 }
 
 .subtitulo {
-    margin: 3rem 0;
+    margin: 0;
     color: var(--colorClaro);
     /* letter-spacing: 0.2rem; */
     font-weight: bold;
+}
+
+.texto-parrafo {
+    color: var(--blanco);
+    margin: 0 3rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .logo {
@@ -145,6 +152,20 @@ header.header {
     font-weight: bold;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.waves {
+    margin-top: 5rem;
+}
+
+.contenedor-servicios {
+    background-color: var(--secundario);
+    margin-bottom: 5rem;
+    height: 30rem;
+}
+
+.contenedor-servicios h2{
+    margin-top: -1rem;
 }
 
 footer.footer {
