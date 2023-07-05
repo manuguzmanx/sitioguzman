@@ -212,6 +212,11 @@ header.header {
     height: 7rem;
 }
 
+.icono:hover {
+    scale: 1.2;
+    transition: ease 0.1s;
+}
+
 .icono-github {
     background-image: url(../img/logogithub.png);
     background-repeat: no-repeat;
@@ -231,9 +236,11 @@ header.header {
 }
 
 .grafico-informacion {
-    width: 95%;
-    background-color: blue;
-    height: 40rem;
+    width: 5rem;
+    background-image: url(../img/grafico.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
     margin: 5rem auto;
 }
 
