@@ -154,6 +154,60 @@ header.header {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.seccion-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-informacion {
+    width: 95%;
+    height: auto;
+    background-color: red;
+    margin: 5rem auto;
+}
+
+.card-foto {
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem auto;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.card-nombre {
+    width: 90%;
+    height: 8rem;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.card-separador {
+    width: 90%;
+    height: 0.5rem;
+    background-color: yellow;
+    margin: 4rem auto;
+}
+
+.card-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+
+.icono {
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+}
+
+.grafico-informacion {
+    width: 95%;
+    background-color: blue;
+    height: 40rem;
+    margin: 5rem auto;
+}
+
 .waves {
     margin-top: 5rem;
 }
