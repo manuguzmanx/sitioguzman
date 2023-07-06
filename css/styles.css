@@ -175,13 +175,14 @@ header.header {
     background-image: url(../img/perfil.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 0.5rem solid var(--azul);
+    border: 0.3rem solid var(--azul);
+    box-shadow: 0 0 10px var(--azul);
 }
 
 .card-foto img {
     max-width: 100%;
     margin: 0 auto;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 
 .card-nombre {
@@ -194,10 +195,11 @@ header.header {
 
 .card-separador {
     width: 90%;
-    height: 0.5rem;
-    background-color: var(--colorClaro);
+    height: 0.2rem;
+    background-color: var(--azul);
     border-radius: 10px;
     margin: 5rem auto;
+    box-shadow: 0 0 10px var(--azul);
 }
 
 .card-redes {
