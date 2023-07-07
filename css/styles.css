@@ -306,7 +306,7 @@ header.header {
 .stack-tecnologias p {
     font-weight: bold;
     text-align: center;
-    color: var(--colorClaro);
+    color: var(--blanco);
 }
 
 .tecnologia-stack:hover {
