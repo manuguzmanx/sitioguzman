@@ -282,11 +282,12 @@ header.header {
 }
 
 .informacion-sobremi {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
+    padding: 1.5rem;
 }
 
 .stack-tecnologias {
