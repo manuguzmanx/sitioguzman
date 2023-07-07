@@ -72,15 +72,30 @@ h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
 .titulo {
     color: var(--colorClaro);
     margin: 2rem 0;
 }
 
 .subtitulo {
-    margin: 0;
+    /* margin: 5rem 0; */
     color: var(--colorClaro);
-    /* letter-spacing: 0.2rem; */
     font-weight: bold;
 }
 
@@ -88,7 +103,9 @@ h2, h3, h4, h5 {
     color: var(--blanco);
     margin: 0 3rem;
     margin-top: 2rem;
-    text-align: center;
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.6;
 }
 
 .logo {
@@ -154,17 +171,30 @@ header.header {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.seccion-header {
+.seccion-sobremi {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .seccion-sobremi {
+        flex-direction: row;
+    }
 }
 
 .card-informacion {
-    width: 95%;
+    width: 90%;
     height: auto;
     background-color: var(--secundario);
-    margin: 5rem auto;
+    margin: 0 auto;
     border-radius: 8px;
+}   
+
+@media (min-width: 768px) {
+    .card-informacion {
+        width: 50%;
+    }
 }
 
 .card-foto {
@@ -179,6 +209,14 @@ header.header {
     box-shadow: 0 0 10px var(--azul);
 }
 
+@media (min-width: 768px) {
+    .card-foto {
+        width: 20rem;
+        height: 20rem;
+        margin: 3rem auto;
+    }
+}
+
 .card-foto img {
     max-width: 100%;
     margin: 0 auto;
@@ -187,15 +225,21 @@ header.header {
 
 .card-nombre {
     width: 90%;
-    height: 10rem;
+    height: 8rem;
     background-color: rgba(255, 255, 255, 0.1);
     margin: 8rem auto 0 auto;
     border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+    .card-nombre {
+        margin: 4rem auto;
+    }
+}
+
 .card-separador {
     width: 90%;
-    height: 0.2rem;
+    height: 0.3rem;
     background-color: var(--azul);
     border-radius: 10px;
     margin: 5rem auto;
@@ -237,13 +281,41 @@ header.header {
     background-size: cover;
 }
 
-.grafico-informacion {
-    width: 5rem;
-    background-image: url(../img/grafico.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    margin: 5rem auto;
+.informacion-sobremi {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.stack-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .stack-tecnologias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.stack-tecnologias p {
+    font-weight: bold;
+    text-align: center;
+    color: var(--colorClaro);
+}
+
+.tecnologia-stack:hover {
+    scale: 1.3;
+    transition: ease 0.2s;
+}
+
+.tecnologia-stack {
+    text-align: center;
 }
 
 .waves {
