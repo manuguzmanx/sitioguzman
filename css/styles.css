@@ -406,7 +406,7 @@ header.header {
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 2rem;
     color: var(--blanco);
 }
@@ -500,7 +500,6 @@ button.boton-reset {
 
 button.btn-disabled {
     opacity: 0.5;
-    border: 0.2px solid var(--blanco);
 }
 
 button.btn-disabled:hover {
