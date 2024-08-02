@@ -40,7 +40,9 @@ html {
 
 /*Código para el modelo caja*/
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -165,12 +167,12 @@ header.header {
 .navegacion a {
     display: flex;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: var(--azul);
     padding: 1.5rem 1rem;
     justify-content: center;
     width: 100%; 
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -188,7 +190,8 @@ header.header {
 
     .navegacion a:hover,
     .navegacion .link-activo {
-        border-radius: 18px;
+        border-radius: 10px;
+        padding: 1rem
     }
 }
 
@@ -377,14 +380,101 @@ header.header {
     margin-top: 5rem;
 }
 
-.contenedor-servicios {
-    background-color: var(--secundario);
-    margin-bottom: 5rem;
-    height: 30rem;
+@media (min-width: 768px) {
+    .waves {
+        margin: 0;
+        z-index: -3;
+    }
 }
 
-.contenedor-servicios h2{
-    margin-top: -1rem;
+/* Servicios */
+/*Servicios*/
+
+@media (min-width: 768px){
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--azul);
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.servicio .iconos {
+    height: 25rem;
+    width: 25rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iconos svg {
+    color: red;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-servicios {
+    display: inline-block;
+}
+
+.titulo-servicios {
+    background-color: var(--secundario);
+    margin-top: -10rem;
+    padding: 1rem;
+}
+
+.contenedor-servicios {
+    background-color: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.servicio {
+    margin-top: 3rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.servicio p {
+    color: var(--blanco);
+
+}
+
+@media (min-width: 768px) {
+    .contenedor-servicios {
+        margin-top: -2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .waves {
+        margin-top: -2srem;
+    }
 }
 
 /* CONTACTO */
