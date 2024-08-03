@@ -52,6 +52,10 @@ body {
     background-color: var(--primario);
 }
 
+body a {
+    text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
@@ -147,7 +151,7 @@ h2, h3, h4, h5 {
 header.header {
     display: flex;
     flex-direction: column;
-    background-color: var(--secundario);
+    background-color: var(red);
 }
 
 @media (min-width: 768px) {
@@ -387,6 +391,42 @@ header.header {
     }
 }
 
+/* Hero */
+.hero {
+    /* background-image: url(/img/hero.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    margin-bottom: 2rem ;
+    background-color: var(--primario);
+}
+
+.contenido-hero {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.9);  Forma anterior */
+    /* background-color: rgb(0 0 0 / 70%); */
+    background-color: var(--secundario);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p,
+.contenido-hero h3,
+.contenido-hero h4 {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
 /* Servicios */
 /*Servicios*/
 
@@ -407,7 +447,6 @@ header.header {
 .servicio h3 {
     color: var(--azul);
     font-weight: normal;
-    margin-bottom: 2rem;
 }
 
 .servicio p {
@@ -420,15 +459,11 @@ header.header {
 .servicio .iconos {
     height: 25rem;
     width: 25rem;
-    background-color: var(--primario);
+    background-color: var(--secundario);
     border-radius: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.iconos svg {
-    color: red;
 }
 
 .main {
@@ -440,14 +475,8 @@ header.header {
     display: inline-block;
 }
 
-.titulo-servicios {
-    background-color: var(--secundario);
-    margin-top: -10rem;
-    padding: 1rem;
-}
-
 .contenedor-servicios {
-    background-color: var(--secundario);
+    background-color: var(--primario);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -462,18 +491,16 @@ header.header {
 
 .servicio p {
     color: var(--blanco);
-
 }
 
 @media (min-width: 768px) {
     .contenedor-servicios {
-        margin-top: -2rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .waves {
-        margin-top: -2srem;
+        margin-top: -2rem;
     }
 }
 
