@@ -415,17 +415,24 @@ header.header {
     gap: 3rem;
 }
 
+@media (min-width: 768px) {
+    .img-hero {
+        width: 60%;
+        margin: 0 auto;
+    }
 
-.animation-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
+    .animation-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+    }
 }
+
 .img-hero {
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 2rem auto;
 }
 
 @media (min-width: 768px) {
